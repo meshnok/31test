@@ -6,7 +6,7 @@ on: push
 
 env:
   CONTAINER_REGISTRY: cnrtest.azurecr.io 
-  IMAGE_NAME: ci-scanning-demo
+  IMAGE_NAME: ci-scanning-demostr
   DOCKERFILE: Dockerfile_vulnerable
 
 jobs:
