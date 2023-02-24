@@ -44,9 +44,9 @@ jobs:
           docker push ${{ env.CONTAINER_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.run_number }}-${{ github.sha }}
 
       ## Publish Telemetry to App Insights
-      - name: Post logs to appinsights
-        uses: Azure/publish-security-assessments@v0
-        with: 
-          scan-results-path: ${{ steps.container-scan.outputs.scan-report-path }}
-          connection-string: ${{ secrets.AZ_APPINSIGHTS_CONNECTION_STRING }}
-          subscription-token: ${{ secrets.AZ_SUBSCRIPTION_TOKEN }} 
+     # - name: Post logs to appinsights
+     #   uses: Azure/publish-security-assessments@v0
+     #   with: 
+     #     scan-results-path: ${{ steps.container-scan.outputs.scan-report-path }}
+     #     connection-string: ${{ secrets.AZ_APPINSIGHTS_CONNECTION_STRING }}
+     #     subscription-token: ${{ secrets.AZ_SUBSCRIPTION_TOKEN }} 
